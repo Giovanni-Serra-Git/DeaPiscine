@@ -14,9 +14,9 @@ import { Helmet } from "react-helmet";
 import ReCAPTCHA from "react-google-recaptcha";
 
 // Configurazione originale: da verificare nella dashboard EmailJS
-const publicKey = "FYP5LyU8qarvhxiGG";
+const publicKey = "RE1i7nC3AZsuck2eG";
 const service_id = "service_os2nylo";
-const template_id = "template_8we7otj";
+const template_id = "template_9tzzolh";
 const site_key_recaptchta = "6LdMpvopAAAAAPsDi6pvqNS3IvmvxqL3abGqQePs";
 
 function ContactsInfo() {
