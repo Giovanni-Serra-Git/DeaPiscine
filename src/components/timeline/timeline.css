@@ -1,0 +1,5 @@
+.margin-block { margin-block: 100px }
+
+h3 { text-transform: capitalize; }
+
+.align-incon { display: flex; justify-content: center; align-items: center; }

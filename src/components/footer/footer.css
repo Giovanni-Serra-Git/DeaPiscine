@@ -1,0 +1,46 @@
+footer { 
+    background-color: var(--theme-main-blue);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 2rem;
+    margin-top: auto;
+}
+
+
+footer svg { 
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 200ms;
+    color: #fff;
+}
+
+footer svg:hover {
+   transform: scale(1.1);
+}
+
+.container-company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: lightgray;
+    font-size: var(--fs-300);
+}
+
+.container-company-info .azienda { text-transform: capitalize }
+
+.container-company-info span { font-weight: 700 }
+
+.container-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts-description-info .country {
+    font-size: clamp(1.125rem, 0.4vw + 1.475rem, 1.25rem );
+}
+
+form label {
+    font-size: clamp(0.875rem, 0.8vw + 0.425rem, 1.125rem );
+}

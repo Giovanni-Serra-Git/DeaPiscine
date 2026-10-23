@@ -1,0 +1,9 @@
+.container-faq {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(100vh - 80px - 150px); */
+    margin-inline: auto;
+    margin-block-start: 150px;
+}
