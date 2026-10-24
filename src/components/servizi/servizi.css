@@ -1,0 +1,22 @@
+.container-servizi { 
+    margin-block-start: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-inline: auto;
+    gap: 30px;
+    justify-content: space-between;
+    padding-block: 1rem;
+    overflow-x: hidden;
+}
+
+.servizi {  flex-basis: 45%; padding: 1rem; }
+
+/* @media screen and (max-width: 1500px) {
+    .vertical-timeline-element h3 { text-align: center }
+} */
+
+@media screen and (max-width: 800px) {
+    .vertical-timeline-element-title { text-align: center; }
+    .servizi { flex-basis: 100%; }
+}

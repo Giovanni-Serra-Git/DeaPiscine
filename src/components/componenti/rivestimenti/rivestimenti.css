@@ -1,0 +1,11 @@
+.container-gallery-item-picture img {
+    max-height: 70vh;
+    margin-inline: auto;
+}
+
+.container-gallery-item-title p,
+.container-gallery-item-description p {
+    text-align: center;
+}
+
+.container-gallery-item-button  { display: flex; justify-content: center; }

@@ -1,0 +1,176 @@
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #ffff;
+    text-transform: capitalize;
+    line-height: 2;
+    gap: 1rem;
+}
+
+
+.hero-image::before {
+    content: "";
+    background-image: url("../../../assets/hero/villa.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    /* must match parent height */
+    height: 100%;
+    position: absolute;
+    /* comment out to see why this is necessary  */
+    overflow: hidden;
+    filter: brightness(82%)
+}
+
+.hero-image > * { color: #fff; position: relative; }
+
+.hero-image-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-block-start: 5rem;
+}
+
+.hero-image h1,
+.hero-image p,
+.hero-image button { text-transform: capitalize }
+
+.hero-image p { width: 90%; text-align: center; font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.hero-image h1 { width: 80%; text-align: center;  }
+
+.hero-image a { display: inline-block; }
+
+.btn.btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    padding: 1.2em 0.6em;
+    font-weight: bold;
+    font-size: clamp(0.813rem, 2.5vw, 1rem); 
+  }
+
+  div.btn-one {
+    background-color: rgba(36, 59, 91,0.75);
+  }
+
+  .btn-one span {
+    transition: all 0.3s;
+  }
+
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+    position: relative;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+
+  .nav-tablet { display: none; }
+  
+
+aside { 
+    margin-block: 6rem;
+    padding-inline: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+
+.aside-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.image-container { position: relative  }
+
+.image-container, .image-container::before, aside img { border-radius: 10px; }
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #d3e9f8;
+} 
+
+.image-container img { 
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  aside { margin-block: 3rem }
+  .aside-description-container { gap: 0.8rem }
+}
+
+@media screen and (max-width: 700px) {
+ 
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-image { height: 700px; }
+}
+
+
+@media screen and (max-width: 700px) {
+  .hero-image { height: 600px; }
+  aside { margin-block: 2rem }
+}
+
+
+@media screen and (max-width: 670px) {
+  aside { margin-block: 1rem }
+}

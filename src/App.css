@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+:root {
+
+	/* ------- Color ------- */
+
+   --theme-main-blue: #273f64; 
+   --theme-light-blue: #f3f9fd;
+   --text--accent-blue: #253546;
+   --text--accent-light-blue: #1B5678;
+
+ 
+	/* Font sizes */
+
+	/* 30 - 84 px */
+
+	--fs-logo: clamp(1rem, 1.2vw + 1rem, 3rem);
+	--fs-500 : clamp(1.5rem, 4vw, 3rem);
+	--fs-400:  clamp(1rem, 3vw, 2rem);
+	--fs-title-gallery: clamp(1.2rem, 2.56vw +  0.24rem, 2rem);
+	--fs-375: clamp(1.125rem, 2.5vw, 2rem);
+	--fs-350: clamp(1.5rem, 4vw, 2rem);
+	--fs-325: clamp(1.2rem, 2.5vw, 1.6rem);
+	--fs-description: 'clamp(16px, 4vw, 18px)';
+	/* --fs-300: clamp(0.843rem, 0.5vw + 0.5625rem, 1rem); */
+	/* --fs-300: clamp(1rem, 0.4vw + 0.775rem, 1.125rem); */
+	--fs-300: clamp(0.825rem, 0.9vw + 0.338rem, 1.125rem);
+	--fs-paragraph: clamp(0.9rem, 2.5vw, 1rem);
+
+	/* 3.7 */
+
+	/* font-families */
+
+	--ff-sans-serif: "Cinzel", serif;
+	--ff-serif: "Roboto", serif;
+  
+}
+
+/* Reset */
+
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+	margin: 0;
+}  
+
+body {
+	line-height: 1.5;
+	font-family: var(--ff-sans-serif); 
+	overflow-x: hidden;
+}
+
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+} 
+
+/* make images easier to work with */
+
+img { display: block }
+
+img,
+picture {
+	max-width: 100%;
+	height: auto;
+}
+
+/* make form elements easier to work with */
+
+button { border: none; outline: none; }
+
+input,textarea { display: block }
+
+
+li,a { 
+	color: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+}
+
+a { text-decoration: none }
+
+p { letter-spacing: inherit }
+
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important; 
+	}  
+}
+
+ul[role="list"] { list-style-type: none } 
+
+html:focus-within { scroll-behavior: smooth }  
+
+
+/******************
+  UTILITY CLASSES
+******************/
+
+.flex { display: flex }
+
+.cinzel-regular {
+	font-family: "Cinzel", serif;	
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+.cinzel-medium {
+	font-family: "Cinzel", serif;	
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.container-centered {
+	width: 90%;
+	margin-inline: auto;
+	margin-block: 100px;
+}
+
+.text-accent-blue { color: var(--text--accent-blue) }
+
+.text-accent-light-blue { color: var(--text--accent-light-blue); }
+
+.fs-500 { font-size: var(--fs-500) }
+
+.fs-400 { font-size: var(--fs-400) }
+
+.fs-350 { font-size: var(--fs-350) }
+
+.fs-300 { font-size: var(--fs-300) }
+
+.fs-description { font-size: var(--fs-description) }
+
+.fs-paragraph { font-size: var(--fs-paragraphs) }
+
+.fs-title-gallery { font-size: var(--fs-title-gallery) }
+
+.fs-375 { font-size: var(--fs-375) }
+
+.fs-logo { font-size: var(--fs-logo) }

@@ -1,0 +1,137 @@
+.notfound {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.notfound .notfound-bg:after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(39, 63, 100) 35%, rgb(10, 131, 156) 100%);
+    color: rgb(255, 255, 255);
+}
+
+.descrizione { text-align: center; }
+
+.descrizione, 
+.notfound-links a { font-size: clamp(1rem, 0.325rem + 0.075vw , 1.375rem); }
+
+.notfound-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfound-social svg { 
+    font-size: 2rem;
+    margin-inline: 10px;
+    transition: 500ms all;
+    border: none;
+    color: #fff;
+}
+
+.notfound-social a:hover svg { 
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+}
+
+.notfound-links a {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    padding: 13px 25px;
+    margin: 7px;
+    -webkit-transition: .2s all;
+    transition: 500ms all;
+}
+
+.notfound-links a:hover { 
+    background-color: #fff;
+    color: black;
+    border-radius: 40px;
+}
+
+.error-state {
+    font-size: clamp(8.875rem, 0.1rem + 0.975vw, 13.75rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 10px
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .descrizione { width: 80%; margin-inline: auto; }
+
+    .notfound-link a { text-align: center }
+
+}
+
+
+/* ************ */
+
+
+/* @media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h1 {
+        font-size: 182px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+
+    .notfound h2 {
+        font-size: 16px
+    }
+
+    .notfound .home-btn,.notfound .contact-btn {
+        font-size: 14px
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

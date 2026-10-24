@@ -1,0 +1,11 @@
+.button,
+.nav-tablet { 
+    background-color: var(--theme-main-blue);
+    color: #fff;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    border-radius: 4px;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+
+.nav-tablet { margin-block: 0.5rem; }

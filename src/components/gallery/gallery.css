@@ -1,0 +1,55 @@
+.image-gallery {z-index: 1}
+
+img.image-gallery-image { max-height: 60vh; }
+
+.container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-block-end: 2rem;
+}
+
+.container p:first-child { text-transform: capitalize }
+
+.container::before {
+    background-image: url("../../../assets/gallery/villa.jpg");
+    content: "";
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    filter: brightness(0.4);
+}
+
+.separator { margin-block: 2rem }
+
+.title,
+.description {
+    color: #fff;
+    position: relative;
+}
+
+.title { 
+    font-size: clamp(1.8rem, calc(2.5rem + 1vw), 2.5rem);
+    font-weight: bold;
+    color: lightgray;
+    position: relative;
+}
+
+.description { font-size: 1.5rem; }
+
+.inner-container { 
+    width: 90%;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-small { font-size: clamp(0.8rem, 2vw, 1.2rem); color: #fff; position: relative; }
+
+video { max-height: 80vh; }
+
